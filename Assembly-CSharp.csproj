@@ -47,6 +47,7 @@
   </ItemGroup>
   <ItemGroup>
      <Compile Include="Assets\Scripts\CheckStatus.cs" />
+     <Compile Include="Assets\Scripts\createPieces.cs" />
      <Compile Include="Assets\Scripts\displayResult.cs" />
      <Compile Include="Assets\Scripts\dragHandler.cs" />
      <Compile Include="Assets\Scripts\dropHandler.cs" />
