@@ -3,9 +3,14 @@ using System.Collections;
 using UnityEngine.UI;
 public class createPieces : MonoBehaviour {
 	public Texture2D myImage;
+	public GameObject piece;
+	GameObject newPiece;
 	public int noOfCols, noOfRows;
+	int noOfSlices;
 	// Use this for initialization
 	void Start () {
+		GetComponent<GridLayoutGroup>().cellSize = new Vector2 (200/noOfRows, 200/noOfCols);
+		noOfSlices = noOfCols * noOfRows;
 		int width = myImage.width / noOfCols;
 		int height = myImage.height / noOfRows;
 		int offsetX = 0;
@@ -13,10 +18,14 @@ public class createPieces : MonoBehaviour {
 		int cnt = 0;
 		//myImage = Resources.Load<Texture2D> ("windows.jpg");
 		//Image part = GetComponentInChildren<Image> ();
-		Texture2D[] tempPart = new Texture2D[noOfCols*noOfRows];
+		Texture2D[] tempPart = new Texture2D[noOfSlices];
 		for (int row=1; row<=noOfRows; row++) {
 			offsetX=0;
 			for(int col=1; col<=noOfCols; col++){
+				newPiece = Instantiate<GameObject>(piece);
+				newPiece.transform.SetParent(transform);
+				newPiece.GetComponentsInChildren<Image>()[1].name = (cnt+1).ToString();
+				newPiece.GetComponent<GridLayoutGroup>().cellSize = new Vector2 (200/noOfRows, 200/noOfCols);
 				tempPart[cnt] = new Texture2D (width, height);
 				tempPart[cnt].SetPixels (myImage.GetPixels (offsetX, offsetY, width, height));
 				tempPart[cnt].Apply ();

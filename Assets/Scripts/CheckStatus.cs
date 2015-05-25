@@ -4,14 +4,26 @@ using System;
 using UnityEngine.UI;
 using System.Diagnostics;
 public class CheckStatus : MonoBehaviour {
-	int noOfPieces = 4;
+	public GameObject slot;
+	GameObject newSlot;
+	public int noOfRows, noOfCols;
 	Stopwatch stopwatch = new Stopwatch();
 	TimeSpan timeElapsed;
 	bool isFinished = false;
+	int noOfPieces;
 	public static Text timer;
 	Component[] slots;
 	// Use this for initialization
 	void Start () {
+		GetComponent<GridLayoutGroup>().cellSize = new Vector2 (200/noOfRows, 200/noOfCols);
+		noOfPieces = noOfCols * noOfRows;
+		//noOfPieces = createPieces.noOfRows*createPieces.noOfCols;
+		for (int i=1; i<=noOfPieces; i++) {
+			newSlot = Instantiate(slot);
+			newSlot.name = i.ToString();
+			newSlot.transform.SetParent(transform);
+			newSlot.GetComponent<GridLayoutGroup>().cellSize = new Vector2 (200/noOfRows, 200/noOfCols);
+		}
 		stopwatch.Start ();
 		timer = GameObject.Find("Timer").GetComponent<Text>();
 		timer.text = "00 : 00";
