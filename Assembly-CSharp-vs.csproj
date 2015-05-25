@@ -46,7 +46,8 @@
 	</Reference>
   </ItemGroup>
   <ItemGroup>
-     <Compile Include="Assets\CheckStatus.cs" />
+     <Compile Include="Assets\Scripts\CheckStatus.cs" />
+     <Compile Include="Assets\Scripts\displayResult.cs" />
      <Compile Include="Assets\Scripts\dragHandler.cs" />
      <Compile Include="Assets\Scripts\dropHandler.cs" />
  <Reference Include="UnityEngine.UI">
