@@ -2,13 +2,14 @@
 using System.Collections;
 using UnityEngine.UI;
 public class createPieces : MonoBehaviour {
-	public Texture2D myImage;
+	Texture2D myImage;
 	public GameObject piece;
 	GameObject newPiece;
 	public int noOfCols, noOfRows;
 	int noOfSlices;
 	// Use this for initialization
 	void Start () {
+		myImage = frontPanel.gameImage;
 		noOfCols = noOfRows = frontPanel.level;
 		Rect slotsRect = GameObject.Find ("Slots").GetComponent<RectTransform> ().rect; 
 		GetComponent<GridLayoutGroup>().cellSize = new Vector2 (slotsRect.width/noOfCols, slotsRect.height/noOfRows);

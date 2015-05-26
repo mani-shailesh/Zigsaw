@@ -14,10 +14,16 @@ Platform assembly: F:\Study\CV and Intern\IIT Bombay\CT\Jigsaw\Build\jigsaw_Data
 Loading F:\Study\CV and Intern\IIT Bombay\CT\Jigsaw\Build\jigsaw_Data\Managed\Assembly-UnityScript.dll into Unity Child Domain
 Platform assembly: F:\Study\CV and Intern\IIT Bombay\CT\Jigsaw\Build\jigsaw_Data\Managed\UnityEngine.UI.dll (this message is harmless)
 Loading F:\Study\CV and Intern\IIT Bombay\CT\Jigsaw\Build\jigsaw_Data\Managed\UnityEngine.UI.dll into Unity Child Domain
-- Completed reload, in  0.191 seconds
+- Completed reload, in  0.176 seconds
 desktop: 1366x768 60Hz; virtual: 1366x768 at 0,0
 <RI> Initializing input.
 <RI> Input initialized.
 <RI> Initialized touch support.
 Platform assembly: F:\Study\CV and Intern\IIT Bombay\CT\Jigsaw\Build\jigsaw_Data\Managed\System.Core.dll (this message is harmless)
 Platform assembly: F:\Study\CV and Intern\IIT Bombay\CT\Jigsaw\Build\jigsaw_Data\Managed\System.dll (this message is harmless)
+Unloading 3 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 8.492042 ms
+
+Unloading 7 unused Assets to reduce memory usage. Loaded Objects now: 178.
+Total: 0.528162 ms (FindLiveObjects: 0.042631 ms CreateObjectMapping: 0.036316 ms MarkObjects: 0.383292 ms  DeleteObjects: 0.034342 ms)
+
