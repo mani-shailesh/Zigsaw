@@ -8,7 +8,7 @@ public class frontPanel : MonoBehaviour {
 	public static int level;
 	string path;
 	public static Texture2D gameImage;
-	string userName;
+	public static string userName;
 	InputField pathBox;
 	// Use this for initialization
 	void Start () {
