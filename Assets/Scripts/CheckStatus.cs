@@ -15,14 +15,16 @@ public class CheckStatus : MonoBehaviour {
 	Component[] slots;
 	// Use this for initialization
 	void Start () {
-		GetComponent<GridLayoutGroup>().cellSize = new Vector2 (200/noOfRows, 200/noOfCols);
+		noOfRows = noOfCols = frontPanel.level;
+		Rect slotsRect = GetComponent<RectTransform> ().rect;
+		GetComponent<GridLayoutGroup>().cellSize = new Vector2 (slotsRect.width/noOfCols, slotsRect.height/noOfRows);
 		noOfPieces = noOfCols * noOfRows;
 		//noOfPieces = createPieces.noOfRows*createPieces.noOfCols;
 		for (int i=1; i<=noOfPieces; i++) {
 			newSlot = Instantiate(slot);
 			newSlot.name = i.ToString();
 			newSlot.transform.SetParent(transform);
-			newSlot.GetComponent<GridLayoutGroup>().cellSize = new Vector2 (200/noOfRows, 200/noOfCols);
+			newSlot.GetComponent<GridLayoutGroup>().cellSize = new Vector2 (slotsRect.width/noOfCols, slotsRect.height/noOfRows);
 		}
 		stopwatch.Start ();
 		timer = GameObject.Find("Timer").GetComponent<Text>();
