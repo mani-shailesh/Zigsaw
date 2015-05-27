@@ -9,8 +9,8 @@ public class createPieces : MonoBehaviour {
 	int noOfSlices;
 	// Use this for initialization
 	void Start () {
-		myImage = frontPanel.gameImage;
-		noOfCols = noOfRows = frontPanel.level;
+		myImage = splashScript.gameImage;
+		noOfCols = noOfRows = splashScript.level;
 		Rect slotsRect = GameObject.Find ("Slots").GetComponent<RectTransform> ().rect; 
 		GetComponent<GridLayoutGroup>().cellSize = new Vector2 (slotsRect.width/noOfCols, slotsRect.height/noOfRows);
 		noOfSlices = noOfCols * noOfRows;

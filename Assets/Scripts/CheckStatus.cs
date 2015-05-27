@@ -15,7 +15,7 @@ public class CheckStatus : MonoBehaviour {
 	Component[] slots;
 	// Use this for initialization
 	void Start () {
-		noOfRows = noOfCols = frontPanel.level;
+		noOfRows = noOfCols = splashScript.level;
 		Rect slotsRect = GetComponent<RectTransform> ().rect;
 		GetComponent<GridLayoutGroup>().cellSize = new Vector2 (slotsRect.width/noOfCols, slotsRect.height/noOfRows);
 		noOfPieces = noOfCols * noOfRows;
@@ -30,7 +30,9 @@ public class CheckStatus : MonoBehaviour {
 		timer = GameObject.Find("Timer").GetComponent<Text>();
 		timer.text = "00 : 00";
 	}
-	
+	public void onClickQuit(){
+		Application.LoadLevel("splash");
+	}
 	// Update is called once per frame
 	void Update () {
 		timeElapsed = stopwatch.Elapsed;

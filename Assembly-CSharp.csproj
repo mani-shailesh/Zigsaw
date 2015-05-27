@@ -52,6 +52,7 @@
      <Compile Include="Assets\Scripts\dragHandler.cs" />
      <Compile Include="Assets\Scripts\dropHandler.cs" />
      <Compile Include="Assets\Scripts\frontPanel.cs" />
+     <Compile Include="Assets\Scripts\splashScript.cs" />
  <Reference Include="UnityEngine.UI">
  <HintPath>D:/Softwares/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
  </Reference>

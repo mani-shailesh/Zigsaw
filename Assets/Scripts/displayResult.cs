@@ -3,8 +3,10 @@ using System.Collections;
 using UnityEngine.UI;
 public class displayResult : MonoBehaviour {
 	Text result;
+	string userName;
 	// Use this for initialization
 	void Start () {
+		userName = splashScript.userName;
 		string[] scores = new string[1];
 		result = GetComponent<Text> ();
 		try{
@@ -24,9 +26,12 @@ public class displayResult : MonoBehaviour {
 		}
 		using (System.IO.StreamWriter file = new System.IO.StreamWriter(@"Scores.txt", true))
 		{
-			file.WriteLine(frontPanel.userName + " : " + CheckStatus.timer.text);
+			file.WriteLine(userName + " : " + CheckStatus.timer.text);
 		}
-		result.text += "\nYeah! "+frontPanel.userName+", You got it in " + CheckStatus.timer.text;
+		result.text += "\nYeah! "+userName+", You got it in " + CheckStatus.timer.text;
+	}
+	public void onClickReplay(){
+		Application.LoadLevel("splash");
 	}
 	
 	// Update is called once per frame
