@@ -1,0 +1,97 @@
+Signature-Version: 1.0
+SHA1-Digest-Manifest: t49gifIZXN3nJ6trDMRW0lncnM0=
+Created-By: 1.0 (Android)
+
+Name: assets/bin/Data/Managed/System.Core.dll
+SHA1-Digest: h1DJ4Q7T/x5nPvX3URHLBkJwMY0=
+
+Name: AndroidManifest.xml
+SHA1-Digest: 3Bph8kODLcj6VzCAje9xF1/wJx0=
+
+Name: assets/bin/Data/Managed/UnityEngine.UI.dll
+SHA1-Digest: VcdMytvmZJRwvAgEOLeGY8g0xWg=
+
+Name: assets/bin/Data/sharedassets1.assets
+SHA1-Digest: B+6RlFN4scm4MUSUDj9yVep+qVQ=
+
+Name: assets/bin/Data/sharedassets2.assets
+SHA1-Digest: o/Tu3WniIBMn24NeRS8OxRCU9Cw=
+
+Name: assets/bin/Data/sharedassets3.assets
+SHA1-Digest: C9rImjFv0gNeVP62fPb6ZuIadgs=
+
+Name: lib/armeabi-v7a/libunity.so
+SHA1-Digest: Cv2aYTekje7dAeuPgsA8LbzZfrw=
+
+Name: assets/bin/Data/Resources/unity_builtin_extra
+SHA1-Digest: vZtIYlTy4GAyGs3BEDYRm9RQjZo=
+
+Name: lib/armeabi-v7a/libmain.so
+SHA1-Digest: gx7DmLBBkK393JdmFeqUFFv6mJc=
+
+Name: lib/x86/libunity.so
+SHA1-Digest: 3dt787vkhEDZgEPNwZPwVG+rGdU=
+
+Name: assets/bin/Data/Managed/UnityEngine.dll
+SHA1-Digest: /PdidBsXiBqHPqVyBzD6lashFh8=
+
+Name: lib/armeabi-v7a/libmono.so
+SHA1-Digest: mM/toEH9weCY0ohe83S8LJtmSuQ=
+
+Name: assets/bin/Data/level0
+SHA1-Digest: oOs2BFTA1J91XsNoRcyQGF9MJ1w=
+
+Name: assets/bin/Data/level2
+SHA1-Digest: HLwb2vTWIlZvbRhR0kO9mm8gzyc=
+
+Name: assets/bin/Data/level1
+SHA1-Digest: OwJozCJNmnHL14G8KUli1M1sSvE=
+
+Name: res/drawable/app_icon.png
+SHA1-Digest: K/28acyohjTuKF3FhJdOV4qDrIQ=
+
+Name: assets/bin/Data/settings.xml
+SHA1-Digest: EaZqLZnAUkIWcL6M2dKPewA4jII=
+
+Name: res/drawable-xhdpi-v4/app_banner.png
+SHA1-Digest: GmAqfy00mkN6GabsZhcK6EHDtzI=
+
+Name: assets/bin/Data/Managed/Mono.Security.dll
+SHA1-Digest: C3IoS4RUihAToZkpf91OujmNL4Y=
+
+Name: assets/bin/Data/unity default resources
+SHA1-Digest: HyhIxEtvU0ycGSr61vbcUVARyA4=
+
+Name: assets/bin/Data/splash.png
+SHA1-Digest: pLIFGreTzOXIqH7c3hYliHrLbHE=
+
+Name: assets/bin/Data/mainData
+SHA1-Digest: KTxyyp894iqR737piVQYFmX2Rbg=
+
+Name: assets/bin/Data/Managed/Assembly-CSharp.dll
+SHA1-Digest: 1ZCVRdl2gtsnnXi4UdpCr6zPqC0=
+
+Name: assets/bin/Data/Managed/System.dll
+SHA1-Digest: YMovExD5ZePuRci6huXM3WQUkIs=
+
+Name: resources.arsc
+SHA1-Digest: f1v6RAKL90tRmYfKOqxMKvoACIE=
+
+Name: assets/bin/Data/Managed/mscorlib.dll
+SHA1-Digest: o8CjsqLe+b9uJE16Pr8JlQ+iT2I=
+
+Name: assets/bin/Data/sharedassets0.assets.split0
+SHA1-Digest: TEb9ZExG4CMYrT1C0kUFeZl2uoo=
+
+Name: lib/x86/libmono.so
+SHA1-Digest: G4qOQH4sIww0J1Qop+FrJ9Ud1Vs=
+
+Name: assets/bin/Data/sharedassets0.assets.split1
+SHA1-Digest: 69obzyGbZBKqzAB2fmEvct2BIhc=
+
+Name: lib/x86/libmain.so
+SHA1-Digest: Yrjh7BUdlk2l64NK6V+mlKX1YMQ=
+
+Name: classes.dex
+SHA1-Digest: UsE/ya5Nxtg2OyNgoTeWbpi81/E=
+

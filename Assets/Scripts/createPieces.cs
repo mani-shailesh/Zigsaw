@@ -5,14 +5,21 @@ public class createPieces : MonoBehaviour {
 	Texture2D myImage;
 	public GameObject piece;
 	GameObject newPiece;
-	public int noOfCols, noOfRows;
+	int noOfCols, noOfRows;
 	int noOfSlices;
+	Vector2 cellSizeVector;
 	// Use this for initialization
 	void Start () {
 		myImage = splashScript.gameImage;
 		noOfCols = noOfRows = splashScript.level;
-		Rect slotsRect = GameObject.Find ("Slots").GetComponent<RectTransform> ().rect; 
-		GetComponent<GridLayoutGroup>().cellSize = new Vector2 (slotsRect.width/noOfCols, slotsRect.height/noOfRows);
+		Rect slotsRect = GameObject.Find ("Slots").GetComponent<RectTransform> ().rect;
+		//float heightRatio = (float)Screen.height/346;
+		//float widthRatio = (float)Screen.width/800;
+		//slotsRect.width = slotsRect.width*widthRatio;
+		//slotsRect.height = slotsRect.height*heightRatio;
+		cellSizeVector = new Vector2 ((slotsRect.width-noOfCols)/noOfCols, (slotsRect.height-noOfRows)/noOfRows);
+		//cellSizeVector = new Vector2 ((slotsRect.width)/noOfCols, (slotsRect.height)/noOfRows);
+		GetComponent<GridLayoutGroup>().cellSize = cellSizeVector;
 		noOfSlices = noOfCols * noOfRows;
 		int width = myImage.width / noOfCols;
 		int height = myImage.height / noOfRows;
@@ -48,13 +55,12 @@ public class createPieces : MonoBehaviour {
 				newPiece = Instantiate<GameObject>(piece);
 				newPiece.transform.SetParent(transform);
 				newPiece.GetComponentsInChildren<Image>()[1].name = partNames[noOfSlices-cnt-1].ToString();
-				newPiece.GetComponent<GridLayoutGroup>().cellSize = new Vector2 (slotsRect.width/noOfCols, slotsRect.height/noOfRows);
+				newPiece.GetComponent<GridLayoutGroup>().cellSize = cellSizeVector;
 				GetComponentsInChildren<Image>()[(cnt+1)*2].GetComponent<Image>().sprite = 
 					Sprite.Create(tempPart[noOfSlices-cnt-1], new Rect(0, 0, width, height), new Vector2(0.5f, 0.0f));
 				cnt++;
 			}
 		}
-
 	}
 	
 	// Update is called once per frame

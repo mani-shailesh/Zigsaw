@@ -10,7 +10,7 @@ public class displayResult : MonoBehaviour {
 		string[] scores = new string[1];
 		result = GetComponent<Text> ();
 		try{
-			scores = System.IO.File.ReadAllLines(@"Scores.txt");
+			scores = System.IO.File.ReadAllLines(Application.persistentDataPath+"/Scores.txt");
 		}catch{
 			print ("File not found");
 		}
@@ -24,7 +24,7 @@ public class displayResult : MonoBehaviour {
 		for (; i<scores.Length; i++) {
 			result.text+=(scores[i]+"\n");
 		}
-		using (System.IO.StreamWriter file = new System.IO.StreamWriter(@"Scores.txt", true))
+		using (System.IO.StreamWriter file = new System.IO.StreamWriter(Application.persistentDataPath+"/Scores.txt", true))
 		{
 			file.WriteLine(userName + " : " + CheckStatus.timer.text);
 		}
@@ -32,6 +32,9 @@ public class displayResult : MonoBehaviour {
 	}
 	public void onClickReplay(){
 		Application.LoadLevel("splash");
+	}
+	public void onClickQuit(){
+		Application.Quit();
 	}
 	
 	// Update is called once per frame

@@ -7,35 +7,40 @@ using UnityEditor;
 public class frontPanel : MonoBehaviour {
 	public static int level;
 	string path;
-	public static string userName;
+	string userName;
 	InputField pathBox;
 	InputField nameBox;
 	Slider levelBar;
 	// Use this for initialization
 	void Start () {
 		level = 2;
+		userName = "";
+		path = "";
 		levelBar = GameObject.Find ("Level").GetComponent<Slider> ();
 		nameBox = GameObject.Find ("Name").GetComponent<InputField> ();
 		pathBox = GameObject.Find ("Path").GetComponent<InputField>();
 		string[] settings = new string[1];
 		try{
-			settings = System.IO.File.ReadAllLines(@"Settings.txt");
-			pathBox.text = settings[1];
-			nameBox.text = settings[0];
-			levelBar.value = int.Parse(settings[2]);
+			settings = System.IO.File.ReadAllLines(Application.persistentDataPath+"/Settings.txt");
+			pathBox.text = path = settings[1];
+			nameBox.text = userName = settings[0];
+			levelBar.value = level = int.Parse(settings[2]);
 		}catch{
+			pathBox.text = Application.persistentDataPath;
 			print ("File not found");
 		}
 	}
 	public void onClickCancel(){
-		Application.LoadLevel("splash");
+		if(userName!="" && path!=""){
+			Application.LoadLevel("splash");
+		}
 	}
 	public void proceed(){
-		level = (int)levelBar.value;
-		userName = nameBox.text;
-		path = pathBox.text;
-		if (userName!="" && path!="") {
-			using (System.IO.StreamWriter file = new System.IO.StreamWriter(@"Settings.txt"))
+		if (nameBox.text!="" && pathBox.text!="") {
+			level = (int)levelBar.value;
+			userName = nameBox.text;
+			path = pathBox.text;
+			using (System.IO.StreamWriter file = new System.IO.StreamWriter(Application.persistentDataPath+"/Settings.txt"))
 			{
 				file.WriteLine(userName);
 				file.WriteLine(path);

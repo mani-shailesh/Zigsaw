@@ -6,32 +6,38 @@ using System.Diagnostics;
 public class CheckStatus : MonoBehaviour {
 	public GameObject slot;
 	GameObject newSlot;
-	public int noOfRows, noOfCols;
+	int noOfRows, noOfCols;
 	Stopwatch stopwatch = new Stopwatch();
 	TimeSpan timeElapsed;
 	bool isFinished = false;
 	int noOfPieces;
+	Vector2 cellSizeVector;
 	public static Text timer;
 	Component[] slots;
 	// Use this for initialization
 	void Start () {
 		noOfRows = noOfCols = splashScript.level;
-		Rect slotsRect = GetComponent<RectTransform> ().rect;
-		GetComponent<GridLayoutGroup>().cellSize = new Vector2 (slotsRect.width/noOfCols, slotsRect.height/noOfRows);
+		Rect slotsRect = GetComponent<RectTransform> ().rect; 
+		//float heightRatio = (float)Screen.height/346;
+		//float widthRatio = (float)Screen.width/800;
+		//slotsRect.width = slotsRect.width*widthRatio;
+		//slotsRect.height = slotsRect.height*heightRatio;
+		print (slotsRect.width);
+		print(slotsRect.height);
+		cellSizeVector = new Vector2((slotsRect.width-noOfCols)/noOfCols, (slotsRect.height-noOfRows)/noOfRows);
+		//cellSizeVector = new Vector2 ((slotsRect.width)/noOfCols, (slotsRect.height)/noOfRows);
+		GetComponent<GridLayoutGroup>().cellSize = cellSizeVector;
 		noOfPieces = noOfCols * noOfRows;
 		//noOfPieces = createPieces.noOfRows*createPieces.noOfCols;
 		for (int i=1; i<=noOfPieces; i++) {
 			newSlot = Instantiate(slot);
 			newSlot.name = i.ToString();
 			newSlot.transform.SetParent(transform);
-			newSlot.GetComponent<GridLayoutGroup>().cellSize = new Vector2 (slotsRect.width/noOfCols, slotsRect.height/noOfRows);
+			newSlot.GetComponent<GridLayoutGroup>().cellSize = cellSizeVector;
 		}
 		stopwatch.Start ();
 		timer = GameObject.Find("Timer").GetComponent<Text>();
 		timer.text = "00 : 00";
-	}
-	public void onClickQuit(){
-		Application.LoadLevel("splash");
 	}
 	// Update is called once per frame
 	void Update () {
