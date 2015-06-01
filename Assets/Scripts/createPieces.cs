@@ -17,7 +17,7 @@ public class createPieces : MonoBehaviour {
 		//float widthRatio = (float)Screen.width/800;
 		//slotsRect.width = slotsRect.width*widthRatio;
 		//slotsRect.height = slotsRect.height*heightRatio;
-		cellSizeVector = new Vector2 ((slotsRect.width-noOfCols)/noOfCols, (slotsRect.height-noOfRows)/noOfRows);
+		cellSizeVector = new Vector2 ((Screen.width-noOfCols)/(noOfCols+1), (slotsRect.height-noOfRows)/noOfRows);
 		//cellSizeVector = new Vector2 ((slotsRect.width)/noOfCols, (slotsRect.height)/noOfRows);
 		GetComponent<GridLayoutGroup>().cellSize = cellSizeVector;
 		noOfSlices = noOfCols * noOfRows;

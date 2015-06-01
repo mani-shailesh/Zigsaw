@@ -4,31 +4,31 @@ using System.Collections;
 
 public class startGame : MonoBehaviour {
 	public GameObject slotsPrefab;
-	public GameObject piecesPrefab;
-	Vector3 slotsPos, piecesPos;
+	public GameObject piecesPanelPrefab;
+	GameObject piecesPanel;
+	Vector3 slotsPos, piecesPanelPos;
 	Quaternion rot;
-	GameObject pieces, slots;
+	RectTransform menuRectTransform;
+	int noOfCols, noOfRows;
+	GameObject slots;
 	// Use this for initialization
 	void Start () {
-		Vector2 slotsSize = new Vector2(Screen.height/2, Screen.height/2);
-		slotsPos = new Vector3(Screen.width/2, Screen.height-slotsSize.y/2, 0);
+		noOfCols = noOfRows = splashScript.level;
+		Vector2 slotsSize = new Vector2((((Screen.width-20)-noOfCols)/(noOfCols+1))*noOfCols, Screen.height);
+		slotsPos = new Vector3(slotsSize.x/2, Screen.height/2, 0);
 		rot = Quaternion.identity;
 		slotsPrefab.GetComponent<RectTransform>().sizeDelta = slotsSize;
 		slots = (GameObject)Instantiate(slotsPrefab, slotsPos, rot);
 		slots.transform.SetParent(transform);
-		//print (slots.GetComponent<RectTransform>().sizeDelta);
-		//slots.GetComponentInChildren<RectTransform>().sizeDelta = new Vector2(5, 5);
 		slots.name = "Slots";
-		//Instantiate (piecesPrefab, piecesPos, rot);
-		Vector2 piecesSize = new Vector2(Screen.width-20, Screen.height/2);
-		piecesPos = new Vector3(Screen.width/2, piecesSize.y/2, 0);
+		Vector2 piecesSize = new Vector2(Screen.width-slotsSize.x, (Screen.height)/noOfRows*noOfCols*noOfRows);
+		piecesPanelPos = new Vector3(Screen.width-piecesSize.x/2, (Screen.height-60)/2+60, 0);
 		rot = Quaternion.identity;
-		piecesPrefab.GetComponent<RectTransform>().sizeDelta = piecesSize;
-		pieces = (GameObject)Instantiate(piecesPrefab, piecesPos, rot);
-		pieces.transform.SetParent(transform);
-		//print (slots.GetComponent<RectTransform>().sizeDelta);
-		//slots.GetComponentInChildren<RectTransform>().sizeDelta = new Vector2(5, 5);
-		pieces.name = "Pieces";
+		piecesPanelPrefab.GetComponent<RectTransform>().sizeDelta = new Vector2(piecesSize.x, Screen.height-60);
+		piecesPanel = (GameObject)Instantiate(piecesPanelPrefab, piecesPanelPos, rot);
+		GameObject.Find("Pieces").GetComponent<RectTransform>().sizeDelta = new Vector2(piecesSize.x-20, piecesSize.y);
+		piecesPanel.transform.SetParent(transform);
+		piecesPanel.name = "PiecesPanel";
 
 	}
 	public void onClickQuit(){

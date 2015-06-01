@@ -39,7 +39,8 @@ public class dragHandler : MonoBehaviour, IDragHandler, IBeginDragHandler, IEndD
 	#region IEndDragHandler implementation
 
 	public void OnEndDrag (PointerEventData eventData)
-	{	GetComponent<CanvasGroup> ().blocksRaycasts = true;
+	{	
+		GetComponent<CanvasGroup> ().blocksRaycasts = true;
 		if (transform.parent == startParent) {
 			transform.position = startPosition;
 		}
