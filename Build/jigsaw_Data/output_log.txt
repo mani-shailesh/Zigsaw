@@ -12,7 +12,7 @@ Platform assembly: F:\Study\CV and Intern\IIT Bombay\CT\Jigsaw_Android\Build\jig
 Loading F:\Study\CV and Intern\IIT Bombay\CT\Jigsaw_Android\Build\jigsaw_Data\Managed\Assembly-CSharp.dll into Unity Child Domain
 Platform assembly: F:\Study\CV and Intern\IIT Bombay\CT\Jigsaw_Android\Build\jigsaw_Data\Managed\UnityEngine.UI.dll (this message is harmless)
 Loading F:\Study\CV and Intern\IIT Bombay\CT\Jigsaw_Android\Build\jigsaw_Data\Managed\UnityEngine.UI.dll into Unity Child Domain
-- Completed reload, in  0.154 seconds
+- Completed reload, in  0.132 seconds
 desktop: 1366x768 60Hz; virtual: 1366x768 at 0,0
 <RI> Initializing input.
 <RI> Input initialized.
@@ -23,13 +23,29 @@ C:/Users/user/AppData/LocalLow/DefaultCompany/Jigsaw
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
 
-Unloading 4 Unused Serialized files (Serialized files now loaded: 0)
-UnloadTime: 19.793013 ms
+Unloading 3 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 11.400504 ms
 
-Unloading 3 unused Assets to reduce memory usage. Loaded Objects now: 218.
-Total: 0.630003 ms (FindLiveObjects: 0.047763 ms CreateObjectMapping: 0.043421 ms MarkObjects: 0.513555 ms  DeleteObjects: 0.011052 ms)
+Unloading 3 unused Assets to reduce memory usage. Loaded Objects now: 235.
+Total: 0.602768 ms (FindLiveObjects: 0.047763 ms CreateObjectMapping: 0.028421 ms MarkObjects: 0.510004 ms  DeleteObjects: 0.011842 ms)
 
-1115
+Unloading 1 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 2.848448 ms
+
+Unloading 8 unused Assets to reduce memory usage. Loaded Objects now: 185.
+Total: 0.456714 ms (FindLiveObjects: 0.048553 ms CreateObjectMapping: 0.030789 ms MarkObjects: 0.347371 ms  DeleteObjects: 0.027631 ms)
+
+C:/Users/user/AppData/LocalLow/DefaultCompany/Jigsaw
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
+
+Unloading 3 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 1.367381 ms
+
+Unloading 3 unused Assets to reduce memory usage. Loaded Objects now: 224.
+Total: 0.479609 ms (FindLiveObjects: 0.036710 ms CreateObjectMapping: 0.022105 ms MarkObjects: 0.397898 ms  DeleteObjects: 0.021710 ms)
+
+1146
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
 
@@ -38,10 +54,10 @@ Total: 0.630003 ms (FindLiveObjects: 0.047763 ms CreateObjectMapping: 0.043421 m
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
 
 Unloading 1 Unused Serialized files (Serialized files now loaded: 0)
-UnloadTime: 7.078858 ms
+UnloadTime: 6.386903 ms
 
-Unloading 105 unused Assets to reduce memory usage. Loaded Objects now: 184.
-Total: 0.505266 ms (FindLiveObjects: 0.042237 ms CreateObjectMapping: 0.041052 ms MarkObjects: 0.342633 ms  DeleteObjects: 0.077763 ms)
+Unloading 130 unused Assets to reduce memory usage. Loaded Objects now: 187.
+Total: 0.542768 ms (FindLiveObjects: 0.043816 ms CreateObjectMapping: 0.031973 ms MarkObjects: 0.373029 ms  DeleteObjects: 0.092764 ms)
 
 C:/Users/user/AppData/LocalLow/DefaultCompany/Jigsaw
  

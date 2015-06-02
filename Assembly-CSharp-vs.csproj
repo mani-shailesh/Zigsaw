@@ -50,8 +50,11 @@
      <Compile Include="Assets\Scripts\createPieces.cs" />
      <Compile Include="Assets\Scripts\displayResult.cs" />
      <Compile Include="Assets\Scripts\dragHandler.cs" />
+     <Compile Include="Assets\Scripts\dragToScrollRect.cs" />
      <Compile Include="Assets\Scripts\dropHandler.cs" />
      <Compile Include="Assets\Scripts\frontPanel.cs" />
+     <Compile Include="Assets\Scripts\imageRemoved.cs" />
+     <Compile Include="Assets\Scripts\panelDropHandler.cs" />
      <Compile Include="Assets\Scripts\splashScript.cs" />
      <Compile Include="Assets\Scripts\startGame.cs" />
      <None Include="Assets\Settings.txt" />

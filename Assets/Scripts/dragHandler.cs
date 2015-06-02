@@ -7,7 +7,7 @@ public class dragHandler : MonoBehaviour, IDragHandler, IBeginDragHandler, IEndD
 	Transform startParent;
 	// Use this for initialization
 	void Start () {
-	
+
 	}
 	
 	// Update is called once per frame

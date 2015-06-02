@@ -1,7 +1,8 @@
 ﻿using UnityEngine;
 using System.Collections;
 using UnityEngine.UI;
-public class createPieces : MonoBehaviour {
+using UnityEngine.EventSystems;
+public class createPieces : MonoBehaviour{
 	Texture2D myImage;
 	public GameObject piece;
 	GameObject newPiece;
@@ -62,7 +63,8 @@ public class createPieces : MonoBehaviour {
 			}
 		}
 	}
-	
+
+
 	// Update is called once per frame
 	void Update () {
 	
