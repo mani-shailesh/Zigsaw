@@ -11,8 +11,11 @@ public class frontPanel : MonoBehaviour {
 	InputField pathBox;
 	InputField nameBox;
 	Slider levelBar;
+	AndroidJavaClass browseClass;
 	// Use this for initialization
 	void Start () {
+		AndroidJNI.AttachCurrentThread();
+		browseClass = new AndroidJavaClass("com.IITB_CDEEP.JigsawAndroid.Browse");
 		level = 2;
 		userName = "";
 		path = "";
@@ -55,6 +58,16 @@ public class frontPanel : MonoBehaviour {
 		path = EditorUtility.OpenFilePanel("Select Image", "", "jpg");
 		pathBox.text = path;
 #endif
+		AndroidJavaClass jc = new AndroidJavaClass("com.unity3d.player.UnityPlayer");
+		AndroidJavaObject currentActivity = jc.GetStatic<AndroidJavaObject>("currentActivity");
+		currentActivity.Call("selectImage");
+		//path = browseClass.CallStatic<string>("returnPath");
+		//pathBox.text = path;
+	}
+
+	public void updatePathBox(string resultPath){
+		path = resultPath;
+		pathBox.text = resultPath;
 	}
 
 	
