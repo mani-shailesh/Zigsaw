@@ -12,7 +12,9 @@ Platform assembly: F:\Study\CV and Intern\IIT Bombay\CT\Jigsaw_Android\Build\jig
 Loading F:\Study\CV and Intern\IIT Bombay\CT\Jigsaw_Android\Build\jigsaw_Data\Managed\Assembly-CSharp.dll into Unity Child Domain
 Platform assembly: F:\Study\CV and Intern\IIT Bombay\CT\Jigsaw_Android\Build\jigsaw_Data\Managed\UnityEngine.UI.dll (this message is harmless)
 Loading F:\Study\CV and Intern\IIT Bombay\CT\Jigsaw_Android\Build\jigsaw_Data\Managed\UnityEngine.UI.dll into Unity Child Domain
-- Completed reload, in  0.115 seconds
+Platform assembly: F:\Study\CV and Intern\IIT Bombay\CT\Jigsaw_Android\Build\jigsaw_Data\Managed\System.Windows.Forms.dll (this message is harmless)
+Loading F:\Study\CV and Intern\IIT Bombay\CT\Jigsaw_Android\Build\jigsaw_Data\Managed\System.Windows.Forms.dll into Unity Child Domain
+- Completed reload, in  0.124 seconds
 desktop: 1366x768 60Hz; virtual: 1366x768 at 0,0
 <RI> Initializing input.
 <RI> Input initialized.
@@ -23,43 +25,96 @@ C:/Users/user/AppData/LocalLow/DefaultCompany/Jigsaw
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
 
-Unloading 4 Unused Serialized files (Serialized files now loaded: 0)
-UnloadTime: 9.926909 ms
+Unloading 3 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 45.681324 ms
 
-Unloading 3 unused Assets to reduce memory usage. Loaded Objects now: 258.
-Total: 0.375397 ms (FindLiveObjects: 0.034737 ms CreateObjectMapping: 0.022500 ms MarkObjects: 0.307107 ms  DeleteObjects: 0.008289 ms)
+Unloading 3 unused Assets to reduce memory usage. Loaded Objects now: 235.
+Total: 12.521163 ms (FindLiveObjects: 0.030789 ms CreateObjectMapping: 0.023289 ms MarkObjects: 12.453662 ms  DeleteObjects: 0.010657 ms)
 
-886
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
-
-733
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
-
-Dragged to panel
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
-
-Dragged to panel
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
-
+Platform assembly: F:\Study\CV and Intern\IIT Bombay\CT\Jigsaw_Android\Build\jigsaw_Data\Managed\System.Drawing.dll (this message is harmless)
+Platform assembly: F:\Study\CV and Intern\IIT Bombay\CT\Jigsaw_Android\Build\jigsaw_Data\Managed\Accessibility.dll (this message is harmless)
+Fallback handler could not load library F:/Study/CV and Intern/IIT Bombay/CT/Jigsaw_Android/Build/jigsaw_Data/Mono/libc
+Fallback handler could not load library F:/Study/CV and Intern/IIT Bombay/CT/Jigsaw_Android/Build/jigsaw_Data/Mono/.\libc
+Fallback handler could not load library F:/Study/CV and Intern/IIT Bombay/CT/Jigsaw_Android/Build/jigsaw_Data/Mono/libc
+Platform assembly: F:\Study\CV and Intern\IIT Bombay\CT\Jigsaw_Android\Build\jigsaw_Data\Managed\Mono.Posix.dll (this message is harmless)
+Fallback handler could not load library F:/Study/CV and Intern/IIT Bombay/CT/Jigsaw_Android/Build/jigsaw_Data/Mono/libc
+Fallback handler could not load library F:/Study/CV and Intern/IIT Bombay/CT/Jigsaw_Android/Build/jigsaw_Data/Mono/.\libc
+Fallback handler could not load library F:/Study/CV and Intern/IIT Bombay/CT/Jigsaw_Android/Build/jigsaw_Data/Mono/libc
+Fallback handler could not load library F:/Study/CV and Intern/IIT Bombay/CT/Jigsaw_Android/Build/jigsaw_Data/Mono/libX11
+Fallback handler could not load library F:/Study/CV and Intern/IIT Bombay/CT/Jigsaw_Android/Build/jigsaw_Data/Mono/.\libX11
+Fallback handler could not load library F:/Study/CV and Intern/IIT Bombay/CT/Jigsaw_Android/Build/jigsaw_Data/Mono/libX11
+Fallback handler could not load library F:/Study/CV and Intern/IIT Bombay/CT/Jigsaw_Android/Build/jigsaw_Data/Mono/libX11
+Fallback handler could not load library F:/Study/CV and Intern/IIT Bombay/CT/Jigsaw_Android/Build/jigsaw_Data/Mono/.\libX11
+Fallback handler could not load library F:/Study/CV and Intern/IIT Bombay/CT/Jigsaw_Android/Build/jigsaw_Data/Mono/libX11
+Fallback handler could not load library F:/Study/CV and Intern/IIT Bombay/CT/Jigsaw_Android/Build/jigsaw_Data/Mono/libX11
+Fallback handler could not load library F:/Study/CV and Intern/IIT Bombay/CT/Jigsaw_Android/Build/jigsaw_Data/Mono/.\libX11
+Fallback handler could not load library F:/Study/CV and Intern/IIT Bombay/CT/Jigsaw_Android/Build/jigsaw_Data/Mono/libX11
+Platform assembly: F:\Study\CV and Intern\IIT Bombay\CT\Jigsaw_Android\Build\jigsaw_Data\Managed\System.Xml.dll (this message is harmless)
+Fallback handler could not load library F:/Study/CV and Intern/IIT Bombay/CT/Jigsaw_Android/Build/jigsaw_Data/Mono/System/Library/Frameworks/Carbon.framework/Versions/Current/Carbon
+Fallback handler could not load library F:/Study/CV and Intern/IIT Bombay/CT/Jigsaw_Android/Build/jigsaw_Data/Mono/.\/System/Library/Frameworks/Carbon.framework/Versions/Current/Carbon
+Fallback handler could not load library F:/Study/CV and Intern/IIT Bombay/CT/Jigsaw_Android/Build/jigsaw_Data/Mono/System/Library/Frameworks/Carbon.framework/Versions/Current/Carbon
+Fallback handler could not load library F:/Study/CV and Intern/IIT Bombay/CT/Jigsaw_Android/Build/jigsaw_Data/Mono/lib/System/Library/Frameworks/Carbon.framework/Versions/Current/Carbon
+Fallback handler could not load library F:/Study/CV and Intern/IIT Bombay/CT/Jigsaw_Android/Build/jigsaw_Data/Mono/.\lib/System/Library/Frameworks/Carbon.framework/Versions/Current/Carbon
+Fallback handler could not load library F:/Study/CV and Intern/IIT Bombay/CT/Jigsaw_Android/Build/jigsaw_Data/Mono/lib/System/Library/Frameworks/Carbon.framework/Versions/Current/Carbon
 Unloading 1 Unused Serialized files (Serialized files now loaded: 0)
-UnloadTime: 4.076475 ms
+UnloadTime: 2.141860 ms
 
-Unloading 88 unused Assets to reduce memory usage. Loaded Objects now: 187.
-Total: 0.442503 ms (FindLiveObjects: 0.032763 ms CreateObjectMapping: 0.035921 ms MarkObjects: 0.311844 ms  DeleteObjects: 0.061579 ms)
+Unloading 8 unused Assets to reduce memory usage. Loaded Objects now: 185.
+Total: 0.886192 ms (FindLiveObjects: 0.045000 ms CreateObjectMapping: 0.020131 ms MarkObjects: 0.796980 ms  DeleteObjects: 0.022894 ms)
 
 C:/Users/user/AppData/LocalLow/DefaultCompany/Jigsaw
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
 
 Unloading 3 Unused Serialized files (Serialized files now loaded: 0)
-UnloadTime: 1.208692 ms
+UnloadTime: 1.325932 ms
 
 Unloading 3 unused Assets to reduce memory usage. Loaded Objects now: 258.
-Total: 0.515924 ms (FindLiveObjects: 0.035526 ms CreateObjectMapping: 0.021710 ms MarkObjects: 0.441318 ms  DeleteObjects: 0.016184 ms)
+Total: 1.429749 ms (FindLiveObjects: 0.054474 ms CreateObjectMapping: 0.023289 ms MarkObjects: 1.326327 ms  DeleteObjects: 0.024473 ms)
+
+1060
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
+
+733
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
+
+Dragged to panel
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
+
+Unloading 1 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 4.685962 ms
+
+Unloading 115 unused Assets to reduce memory usage. Loaded Objects now: 187.
+Total: 1.185799 ms (FindLiveObjects: 0.035526 ms CreateObjectMapping: 0.038684 ms MarkObjects: 1.032640 ms  DeleteObjects: 0.077763 ms)
+
+C:/Users/user/AppData/LocalLow/DefaultCompany/Jigsaw
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
+
+Unloading 2 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 2.714234 ms
+
+Unloading 3 unused Assets to reduce memory usage. Loaded Objects now: 235.
+Total: 1.031061 ms (FindLiveObjects: 0.033947 ms CreateObjectMapping: 0.016579 ms MarkObjects: 0.958824 ms  DeleteObjects: 0.020921 ms)
+
+Unloading 1 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 0.989219 ms
+
+Unloading 8 unused Assets to reduce memory usage. Loaded Objects now: 185.
+Total: 1.003824 ms (FindLiveObjects: 0.039868 ms CreateObjectMapping: 0.016184 ms MarkObjects: 0.922113 ms  DeleteObjects: 0.023684 ms)
+
+C:/Users/user/AppData/LocalLow/DefaultCompany/Jigsaw
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
+
+Unloading 3 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 0.879086 ms
+
+Unloading 3 unused Assets to reduce memory usage. Loaded Objects now: 258.
+Total: 1.072904 ms (FindLiveObjects: 0.034342 ms CreateObjectMapping: 0.019737 ms MarkObjects: 0.999877 ms  DeleteObjects: 0.018552 ms)
 
 886
  
@@ -69,11 +124,21 @@ Total: 0.515924 ms (FindLiveObjects: 0.035526 ms CreateObjectMapping: 0.021710 m
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
 
-Unloading 1 Unused Serialized files (Serialized files now loaded: 0)
-UnloadTime: 1.373298 ms
+Success
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
 
-Unloading 88 unused Assets to reduce memory usage. Loaded Objects now: 187.
-Total: 1.119876 ms (FindLiveObjects: 0.080132 ms CreateObjectMapping: 0.065132 ms MarkObjects: 0.883032 ms  DeleteObjects: 0.088026 ms)
+Unloading 2 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 1.205536 ms
+
+Unloading 90 unused Assets to reduce memory usage. Loaded Objects now: 167.
+Total: 0.977771 ms (FindLiveObjects: 0.033947 ms CreateObjectMapping: 0.022105 ms MarkObjects: 0.855402 ms  DeleteObjects: 0.065921 ms)
+
+Unloading 1 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 0.681321 ms
+
+Unloading 2 unused Assets to reduce memory usage. Loaded Objects now: 185.
+Total: 0.986850 ms (FindLiveObjects: 0.027237 ms CreateObjectMapping: 0.015789 ms MarkObjects: 0.932376 ms  DeleteObjects: 0.010657 ms)
 
 C:/Users/user/AppData/LocalLow/DefaultCompany/Jigsaw
  

@@ -1,21 +1,34 @@
 ﻿using UnityEngine;
 using System.Collections;
 using UnityEngine.UI;
+
 #if UNITY_EDITOR
 using UnityEditor;
 #endif
+
+#if UNITY_STANDALONE_WIN
+using System.Runtime.InteropServices;
+#endif
 public class frontPanel : MonoBehaviour {
+#if UNITY_STANDALONE_WIN
+	[DllImport("user32.dll")]
+	private static extern void OpenFileDialog();
+#endif
 	public static int level;
 	string path;
 	string userName;
 	InputField pathBox;
 	InputField nameBox;
 	Slider levelBar;
+#if UNITY_ANDROID
 	AndroidJavaClass browseClass;
+#endif
 	// Use this for initialization
 	void Start () {
+#if UNITY_ANDROID
 		AndroidJNI.AttachCurrentThread();
 		browseClass = new AndroidJavaClass("com.IITB_CDEEP.JigsawAndroid.Browse");
+#endif
 		level = 2;
 		userName = "";
 		path = "";
@@ -54,15 +67,27 @@ public class frontPanel : MonoBehaviour {
 		}
 	}
 	public void browseImage(){
+
 #if UNITY_EDITOR		
 		path = EditorUtility.OpenFilePanel("Select Image", "", "jpg");
 		pathBox.text = path;
 #endif
+
+#if UNITY_ANDROID
 		AndroidJavaClass jc = new AndroidJavaClass("com.unity3d.player.UnityPlayer");
 		AndroidJavaObject currentActivity = jc.GetStatic<AndroidJavaObject>("currentActivity");
 		currentActivity.Call("selectImage");
-		//path = browseClass.CallStatic<string>("returnPath");
-		//pathBox.text = path;
+#endif
+
+#if UNITY_STANDALONE_WIN
+		System.Windows.Forms.OpenFileDialog ofd = new System.Windows.Forms.OpenFileDialog();
+		ofd.InitialDirectory = Application.persistentDataPath;
+		ofd.Filter =  "Image files (*.jpg, *.jpeg, *.jpe, *.jfif, *.png) | *.jpg; *.jpeg; *.jpe; *.jfif; *.png";
+		if(ofd.ShowDialog() == System.Windows.Forms.DialogResult.OK){
+			path = ofd.FileName;
+			pathBox.text = path;
+		}
+#endif
 	}
 
 	public void updatePathBox(string resultPath){
